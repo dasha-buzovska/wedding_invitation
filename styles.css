@@ -1,0 +1,307 @@
+body {
+	margin: 0px;
+}
+
+.image {
+	width: 100%;
+	filter: brightness(1.0);
+	filter: contrast(90%);
+	filter: grayscale(30%);
+	/*filter: invert(75%);*/
+	/*filter: saturate(50%);*/
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+.text-header {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+.text-header {
+	margin-right: 900px;
+	background-image: url('wall.jpg');
+	filter: grayscale(30%);
+	background-size: cover;
+}
+
+.text {
+	font-size: 100px;
+}
+
+.decorative-text {
+	text-align: center;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.invitation-title {
+	font-size: 70px;
+	padding-top: 20px;
+}
+
+img[title] {
+	background-color: 
+}
+
+.invitation-body {
+	width: 100%;
+	/*height: 550px;*/
+	margin: 0px;
+}
+
+.main-font {
+	text-align: center;
+	font-size: 25px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.invitation-text {
+	text-align: justify;
+	background-image: url('image3.png');
+	background-size: 300px 150px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 175px;
+}
+
+.submit-button {
+	padding: 10px;
+}
+
+/*.submit-picture {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}*/
+
+.submit-text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+form {
+	padding-top: 15px;
+	
+}
+
+input {
+	background-color: #b7c9e1;
+	width: 250px;
+	height: 60px;
+	padding: 10px 30px;
+    border-radius: 10px;
+	border-color: #808080;
+}
+
+input:hover {
+	color: white;
+	background-color: #808080;
+}
+
+.map {
+	width: 100%;
+	height: 550px;
+	margin: 0px;
+}
+
+.map_container {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.google_map {
+	/*float: inline-block;*/
+	width: 100%;
+}
+
+.address {
+	margin: 110px 150px;
+	float: right;
+}
+
+/*.footer-top{
+	background-color: #f7f7f7;
+    text-align: center;
+    height: 150px;
+}*/
+
+.fb {
+	background-position: center;
+	background-image: url('fb.png');
+	background-size: 60px;
+	background-repeat: no-repeat;
+}
+
+.fb:hover {
+	background-image: url('fbHover.png');
+}
+
+/*.footer-cell {
+	height: 150px;
+	padding-top: 55px;
+	color: #808080;
+	font-weight: bold;
+}*/
+
+.submit-picture-left {
+	padding-left: 250px;
+	background-image: url('image4.png');
+	background-size: 250px 90px;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.submit-picture-right {
+	padding-right: 250px;
+	background-image: url('image4.png');
+	background-size: 250px 90px;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.footer-top {
+	background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-cell {
+	line-height: 60px
+}
+.fb {
+	height: 60px;
+}
+
+@media (min-width: 1200px) {
+	.text-header {
+		display: block;
+		margin-right: 900px;
+		background-image: url('wall.jpg');
+		filter: grayscale(30%);
+		background-size: auto 500px;
+		padding: 50px 50px 60px 50px; 
+		height: 500px;
+	}
+
+  .carousel {
+  	width: 900px;
+  	height: 500px;
+  	float: right;
+  }
+
+  .alternative-header {
+		display: none;
+	}
+
+	.invitation-text {
+		padding-left: 150px;
+		padding-right: 150px;
+		padding-top: 30px;
+	}
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  
+  .text-header {
+		display: none;
+	}
+
+	.alternative-header {
+		display: block;
+	}
+
+  .carousel {
+  	width: 900px;
+  	height: 500px;
+  	margin: auto;
+  	/*float: right;*/
+  }
+
+  .invitation-text {
+		width: 900px;
+		margin: auto;
+	}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 600px) and (max-width: 899px) {
+  
+  .invitation-text {
+  	padding-left: 16px;
+  	padding-right: 16px;
+  	font-size: 20px;
+  }
+
+  .submit-picture-left {
+		padding-left: 0;
+		background: none;
+	}
+
+	.submit-picture-right {
+		padding-right: 0;
+		background: none;
+	}
+
+	.submit-text {
+		font-size: 20px;
+		font-weight: bold;
+	}
+  
+}
+
+@media (max-width: 599px) {
+  
+  .text {
+		font-size: 50px;
+	}
+
+	.invitation-text {
+		font-size: 16px;
+  	padding-left: 16px;
+  	padding-right: 16px;
+  	padding-bottom: 16px;
+  	background: none;
+  }
+  
+  .submit-picture-left {
+		padding-left: 0;
+		background: none;
+	}
+
+	.submit-picture-right {
+		padding-right: 0;
+		background: none;
+	}
+
+	.submit-text {
+		font-size: 16px;
+		font-weight: bold;
+	}
+}

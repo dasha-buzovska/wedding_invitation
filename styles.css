@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Brush Script";
+  src: url("Brush Script.ttf");
+}
+
+@font-face {
+  font-family: "LucidaGrande";
+  src: url("LucidaGrande.ttc");
+}
+
 body {
 	margin: 0px;
 }
@@ -7,27 +17,11 @@ body {
 	filter: brightness(1.0);
 	filter: contrast(90%);
 	filter: grayscale(30%);
-	/*filter: invert(75%);*/
-	/*filter: saturate(50%);*/
 }
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
 
 .text-header {
 	display: none;
 }
-
-
-
-
-
-
-
-
 
 .text-header {
 	margin-right: 900px;
@@ -42,7 +36,7 @@ body {
 
 .decorative-text {
 	text-align: center;
-	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-family: "Brush Script";
 	font-weight: bold;
 	letter-spacing: 2px;
 }
@@ -58,14 +52,13 @@ img[title] {
 
 .invitation-body {
 	width: 100%;
-	/*height: 550px;*/
 	margin: 0px;
 }
 
 .main-font {
 	text-align: center;
 	font-size: 25px;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "LucidaGrande", Monaco, monospace;
 }
 
 .invitation-text {
@@ -80,15 +73,6 @@ img[title] {
 .submit-button {
 	padding: 10px;
 }
-
-/*.submit-picture {
-	-moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}*/
 
 .submit-text {
 	padding-top: 20px;
@@ -126,7 +110,6 @@ input:hover {
 }
 
 .google_map {
-	/*float: inline-block;*/
 	width: 100%;
 }
 
@@ -134,12 +117,6 @@ input:hover {
 	margin: 110px 150px;
 	float: right;
 }
-
-/*.footer-top{
-	background-color: #f7f7f7;
-    text-align: center;
-    height: 150px;
-}*/
 
 .fb {
 	background-position: center;
@@ -151,13 +128,6 @@ input:hover {
 .fb:hover {
 	background-image: url('fbHover.png');
 }
-
-/*.footer-cell {
-	height: 150px;
-	padding-top: 55px;
-	color: #808080;
-	font-weight: bold;
-}*/
 
 .submit-picture-left {
 	padding-left: 250px;
@@ -175,12 +145,17 @@ input:hover {
 	background-repeat: no-repeat;
 }
 
-.footer-top {
-	background-color: #f7f7f7;
-  text-align: center;
+.footer {
+  /*height: 60px;*/
+  background-color: #f7f7f7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.clr {
+  clear: both;
+}
+
 .footer-cell {
 	line-height: 60px
 }
@@ -217,11 +192,6 @@ input:hover {
   
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
 @media (min-width: 900px) and (max-width: 1199px) {
   
   .text-header {
@@ -236,20 +206,13 @@ input:hover {
   	width: 900px;
   	height: 500px;
   	margin: auto;
-  	/*float: right;*/
   }
 
   .invitation-text {
 		width: 900px;
 		margin: auto;
 	}
-  
 }
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 600px) and (max-width: 899px) {
   
@@ -273,7 +236,6 @@ input:hover {
 		font-size: 20px;
 		font-weight: bold;
 	}
-  
 }
 
 @media (max-width: 599px) {
@@ -288,6 +250,10 @@ input:hover {
   	padding-right: 16px;
   	padding-bottom: 16px;
   	background: none;
+  }
+
+  .invitation-title {
+    font-size: 50px;
   }
   
   .submit-picture-left {
@@ -304,4 +270,10 @@ input:hover {
 		font-size: 16px;
 		font-weight: bold;
 	}
+}
+
+@media (max-width: 260px) {
+  .invitation-title {
+    font-size: 20px;
+  }
 }
